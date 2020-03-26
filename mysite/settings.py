@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'AI001'
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# Machine Learning Models
+MODELS = os.path.join(BASE_DIR, 'AI001/models')
