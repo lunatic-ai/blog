@@ -18,8 +18,9 @@ from django.urls import path, include
 from AI001 import views
 
 urlpatterns = [
+    #path('blog/', include('blog.urls')),
+    #path('classify/', views.call_model.as_view()),
+    path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
-    path('classify/', views.call_model.as_view())
 ]
 
