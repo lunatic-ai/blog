@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'AI001',
     'polls.apps.PollsConfig',
+    'boards',
 ]
 
 MIDDLEWARE = [

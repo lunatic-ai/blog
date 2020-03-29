@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from AI001 import views
+from django.conf.urls import url
+from boards import views
 
 urlpatterns = [
     #path('blog/', include('blog.urls')),
     #path('classify/', views.call_model.as_view()),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('boards/', views.home, name='home'),
 ]
 
