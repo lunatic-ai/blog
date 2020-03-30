@@ -22,8 +22,10 @@ from boards import views
 urlpatterns = [
     #path('blog/', include('blog.urls')),
     #path('classify/', views.call_model.as_view()),
-    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
-    path('boards/', views.home, name='home'),
+    #path('polls/', include('polls.urls')),
+    #path('admin/', admin.site.urls),
+    #path('boards/', include('boards.urls')),
+    url(r'^$', views.home, name='home'),
+    url(r'^admin/', admin.site.urls),
 ]
 
